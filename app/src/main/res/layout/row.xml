@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:id="@+id/layout"
+    >
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Title"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:id="@+id/titleTextView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SubTitle"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:id="@+id/descriptionTextView"/>
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="date"
+            android:layout_gravity="end"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:buttonTint="@color/red"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/like_empty"
+                android:id="@+id/like"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="20dp"
+                android:id="@+id/numOfLikes"
+                android:layout_gravity="end"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="end">
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/delete_red"
+                    android:buttonTint="@color/red"
+                    android:id="@+id/delete"
+
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

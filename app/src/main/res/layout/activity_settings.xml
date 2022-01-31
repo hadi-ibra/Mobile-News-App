@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications:"
+        android:textSize="32dp" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        />
+
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:checked="true"
+        android:text="Notifications:" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerlinear"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textSize="24dp"
+            />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:id="@+id/selection_spinner"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/items"
+            android:prompt="@string/sp_prompt"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+
+</LinearLayout>

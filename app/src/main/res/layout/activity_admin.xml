@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Add News"
+        android:textSize="28dp" />
+
+
+    <EditText
+        android:background="@drawable/search"
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="7dp"
+        android:hint="Title"
+        ></EditText>
+
+    <EditText
+        android:padding="7dp"
+        android:gravity="start"
+        android:background="@drawable/search"
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="Description"></EditText>
+<!--test-->
+    <EditText
+        android:id="@+id/keywords"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="7dp"
+        android:background="@drawable/search"
+        android:hint="Keywords"></EditText>
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/sp_prompt"
+
+        ></Spinner>
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="ADD"></Button>
+</LinearLayout>
